@@ -29,14 +29,82 @@ refreshBTN.addEventListener("click", () => {
 
   emoji41.textContent = a;
   emoji42.textContent = e;
-  emoji43.textContent = c;
+  emoji43.textContent = f;
   emoji33.textContent = a;
-  emoji32.textContent = f;
+  emoji32.textContent = c;
   emoji31.textContent = e;
   emoji21.textContent = b;
   emoji22.textContent = f;
-  emoji23.textContent = b;
+  emoji23.textContent = d;
   emoji13.textContent = c;
-  emoji11.textContent = d;
+  emoji11.textContent = b;
   emoji12.textContent = d;
 });
+
+// const card = document.getElementsByClassName("card");
+// card.addEventListener("click", () => {
+//   flip(card1);
+// });
+
+let flippedCards = [];
+
+async function flip(cardElement) {
+  cardElement.addEventListener("click", async function handleClick() {
+    // Prevent clicking the same card twice
+    if (flippedCards.includes(cardElement)) return;
+
+    // Flip logic (e.g., show emoji)
+    cardElement.classList.add("flipped");
+
+    flippedCards.push(cardElement);
+
+    if (flippedCards.length === 2) {
+      const [firstCard, secondCard] = flippedCards;
+
+      // Compare contents
+      if (firstCard.textContent === secondCard.textContent) {
+        console.log("Matched:", firstCard.textContent);
+
+        // Disable further clicks
+        firstCard.removeEventListener("click", handleClick);
+        secondCard.removeEventListener("click", handleClick);
+      } else {
+        console.log("Not a match");
+
+        // Wait a bit before resetting
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        firstCard.classList.remove("flipped");
+        secondCard.classList.remove("flipped");
+      }
+
+      // Reset for next round
+      flippedCards = [];
+    }
+  });
+}
+
+const card1 = document.getElementById("card1");
+const card2 = document.getElementById("card2");
+const card3 = document.getElementById("card3");
+const card4 = document.getElementById("card4");
+const card5 = document.getElementById("card5");
+const card6 = document.getElementById("card6");
+const card7 = document.getElementById("card7");
+const card8 = document.getElementById("card8");
+const card9 = document.getElementById("card9");
+const card10 = document.getElementById("card10");
+const card11 = document.getElementById("card11");
+const card12 = document.getElementById("card12");
+
+flip(card1);
+flip(card2);
+flip(card3);
+flip(card4);
+flip(card5);
+flip(card6);
+flip(card7);
+flip(card8);
+flip(card9);
+flip(card10);
+flip(card11);
+flip(card12);

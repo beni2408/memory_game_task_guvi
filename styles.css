@@ -43,3 +43,14 @@
 /* .card {
   background-color: whitesmoke;
 } */
+
+#emoji {
+  cursor: pointer; /* shows pointer on hover */
+}
+
+#restart-btn {
+  cursor: pointer;
+}
+.card {
+  cursor: pointer;
+}
