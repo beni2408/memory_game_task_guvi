@@ -54,3 +54,18 @@
 .card {
   cursor: pointer;
 }
+
+.hidden {
+  color: transparent; /* Hide the text initially */
+}
+
+.revealed {
+  background-color: #fff;
+  color: black;
+}
+
+.matched {
+  background-color: lightgreen;
+  color: black;
+  pointer-events: none;
+}
