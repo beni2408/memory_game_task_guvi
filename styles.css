@@ -1,0 +1,45 @@
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+  /* font-weight: 400;
+  font-style: normal; */
+}
+.rowdies-light {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+/* .emoji {
+  background-color: whitesmoke;
+} */
+
+.rowdies-regular {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rowdies-bold {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rowdies-new {
+  color: #4883ff;
+}
+
+.saira {
+  font-family: "Saira", sans-serif;
+  /* font-optical-sizing: auto; */
+  /* font-weight: <weight>; */
+  /* font-style: normal; */
+  /* font-variation-settings: "wdth" 100; */
+}
+
+/* .sanple {
+  background-color: antiquewhite;
+} */
+
+/* .card {
+  background-color: whitesmoke;
+} */
