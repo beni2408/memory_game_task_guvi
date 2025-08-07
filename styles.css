@@ -47,6 +47,9 @@
 #emoji {
   cursor: pointer; /* shows pointer on hover */
 }
+.emoji {
+  font-size: 30px;
+}
 
 #restart-btn {
   cursor: pointer;
