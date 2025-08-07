@@ -25,6 +25,7 @@
     <link hr
   </head>
   <body class="bg-[#000000]">
+    h
     <div
       class="w-full h-full flex flex-col justify-between items-center bg-[#000000]"
     >
@@ -32,9 +33,34 @@
         <h1 class="text-[8vw] md:text-[6vw] righteous-regular text-green-500">
           Memory Game
         </h1>
+        <div
+          class="flex flex-row w-[35vw] border-red items-center justify-center"
+        >
+          <span>
+            <h1 class="text-white mt-7 righteous-regular text-[4vw]">
+              Overview
+              <a class="text-green-500">&</a>
+              Rules
+            </h1>
+          </span>
+        </div>
+        <p
+          class="text-white mt-2 md:text-[1vw] text-[3vw] righteous-regular md:ml-75 md:mr-75 ml-10 mr-10 text-justify"
+        >
+          The Memory Game is a simple yet engaging card-matching game built
+          using HTML, CSS, and JavaScript (DOM manipulation). The game begins
+          with a shuffled set of cards laid face down. Players click on two
+          cards at a time to flip them and reveal their front faces. If the two
+          cards match, they stay face-up; if not, they flip back after a short
+          delay. The goal is to find all matching pairs using memory and
+          observation skills. The game includes a restart button to reset the
+          board and reshuffle the cards. It is designed to be fully responsive,
+          working seamlessly across both desktop and mobile devices.
+        </p>
+
         <button
           id="restart-btn"
-          class="bg-green-500 text-[whitesmoke] text-[3vw] md:text-[2vw] w-[20vw] h-[2.5vh] md:w-[15vw] md:h-[5vh] rounded-md rowdies-light text-sm"
+          class="bg-green-500 mt-10 md:mt-35 text-[whitesmoke] text-[3vw] md:text-[2vw] w-[20vw] h-[2.5vh] md:w-[15vw] md:h-[5vh] rounded-md rowdies-light text-sm"
         >
           Restart
         </button>
